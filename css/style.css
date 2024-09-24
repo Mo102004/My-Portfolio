@@ -1462,52 +1462,78 @@ main {
       flex-wrap: wrap;
       .contaner-image {
         background: var(--main-color);
-        width: 150px;
-        height: 175px;
+        width: 130px;
+        height: 145px;
         border-top-left-radius: 500%;
         border-top-right-radius: 500%;
-        border: #000 solid 5px;
+        border: #000 solid 3px;
         position: absolute;
-        top: 30%;
+        top: 35%;
         right: 4%;
         img {
-          width: 140px;
-          height: 150px;
-          margin-top: 15px;
+          width: 125px;
+          height: 120px;
+          margin-top: 20px;
           user-select: none;
         }
       }
         .index {
-        width: 100%;
+        width: 90%;
         padding: 20px;
         position: absolute;
-        left: 1%;
+        left: 0.5%;
         .span-1 {
-          font-size: 20px;
+          font-size: 15px;
         }
         .span-2 {
-          font-size: 18px;
+          font-size: 12px;
         }
         p {
-          width: 280px;
-          font-size: 15px;
+          width: 180px;
+          font-size: 10px;
+          line-height: 15px;
         }
       }
     }
     .parent-button {
       position: absolute;
-      top: 40%;
-      left: 0%;
+      top: 50%;
+      left: 2%;
+      .buttons {
+        .btn-github {
+          width: 170px;
+          margin-left: 10px;
+        }
+      }
     }
     .perant-icons {
-      flex-wrap: wrap;
-      width: 68%;
+      margin-top: 20px;
+      width: 70%;
       position: absolute;
-      right: 18%;
-      bottom: 20%;
+      right: 15%;
+      bottom: 1%;
+      flex-wrap: wrap;
+      ion-icon {
+        font-size: 35px;
+        margin: 0px 25px;
+      }
+      .vue-logo {
+        width: 40px;
+        height: 40px;
+        user-select: none;
+      }
+      .pug-logo {
+        width: 70px;
+        height: 70px;
+        user-select: none;
+      }
+      .git-logo {
+        margin-left: 5px;
+        user-select: none;
+      }
     }
   }
-  .languages {
+    .languages {
       height: 700px;
       margin-bottom: 300px;
       padding-top: 100px;
@@ -1519,7 +1545,7 @@ main {
       .perant-bar {
         padding: 50px 0px;
         position: absolute;
-        left: 50px;
+        left: 35px;
         top: 25%;
         .box-arabic h4,
         .box-english h4,
@@ -1543,7 +1569,7 @@ main {
         height: 200px !important;
         position: absolute;
         top: 80%;
-        right: 25%;
+        right: 22%;
       }
   }
   .career-objective {
@@ -1570,8 +1596,8 @@ main {
       }
       .logo-career {
           position: absolute;
-          right: 25%;
-          top: 80%;
+          right: 20%;
+          top: 95%;
           width: 250px !important;
           height: 250px !important;
       }
@@ -1593,7 +1619,7 @@ main {
       align-items: center;
       flex-wrap: wrap;
       position: absolute;
-      right: 6%;
+      right: 0%;
       .card {
         --background: linear-gradient(to left, #f7ba2b 0%, #ea5358 100%);
         width: 190px;
@@ -1623,7 +1649,7 @@ main {
       background-color: transparent;
       position: absolute;
       top: 30%;
-      left: 20%;  
+      left: 18%;  
       span {
         display: block;
         width: 250px;
@@ -1638,7 +1664,7 @@ main {
       height: 250px !important;
       position: absolute;
       top: 75%;
-      right: 22%;
+      right: 18%;
     }  
   }
   .education {
@@ -1650,7 +1676,7 @@ main {
     article {
       width: 60%;
       position: absolute;
-      left: 20%;
+      left: 15%;
       img {
         width: 250px;
         height: 150px;
@@ -1664,11 +1690,11 @@ main {
       }
     }
     .logo-education {
-      width: 250px !important;
-      height: 250px !important;
+      width: 200px !important;
+      height: 200px !important;
       position: absolute;
-      top: 60%;
-      right: 22%;
+      top: 55%;
+      right: 25%;
     }
   }
   .contact {
@@ -1683,7 +1709,7 @@ main {
     div {
       position: absolute;
       top: 30%;
-      left: 10%;
+      left: 5%;
       h2 {
         font-size: 25px;
         font-weight: 500;
@@ -1694,10 +1720,10 @@ main {
       }
     }
     .logo-contact {
-      width: 250px !important ;
-      height: 250px !important ;
+      width: 200px !important ;
+      height: 200px !important ;
       position: absolute;
-      top: 43%;
+      top: 48%;
       right: 1%;
     }
     .parent-icons-contact {
