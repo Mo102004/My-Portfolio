@@ -1398,7 +1398,7 @@ main {
   
 
 }
-@media (max-width: 669px) {
+@media (min-width: 400px) and (max-width: 669px) {
   header {
     width: 100%;
     h1 {
@@ -1418,6 +1418,365 @@ main {
       position: absolute;
       top: 70px;
       right: 1%;
+        nav ul li {
+        width: 200px;
+        list-style: none;
+        margin-bottom: 10px;
+        padding: 5px 10px;
+        border-bottom: solid 2px #0000008f;
+        cursor: pointer;
+      }
+      nav ul [class~="last-a"] {
+        border-bottom: none;
+        margin: 0px;
+      }
+      li a {
+        color: #000000;
+        text-decoration: none;
+        text-transform: capitalize;
+        font-size: 18px;
+        transition: 0.3s;
+      }
+      li a:hover {
+        padding-left: 25px;
+      }
+    }
+    .navigation-parent::after {
+      content: "";
+      position: absolute;
+      border-style: solid;
+      border-width: 8px;
+      border-color: transparent transparent #eee;
+      right: 5px;
+      top: -16px;
+    }
+  }
+  .Home {
+    .contant {
+      width: 100%;
+      height: 500px;
+      transform: translateY(0%);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      .contaner-image {
+        background: var(--main-color);
+        width: 130px;
+        height: 145px;
+        border-top-left-radius: 500%;
+        border-top-right-radius: 500%;
+        border: #000 solid 3px;
+        position: absolute;
+        top: 35%;
+        right: 5%;
+        img {
+          width: 125px;
+          height: 120px;
+          margin-top: 20px;
+          user-select: none;
+        }
+      }
+        .index {
+        width: 90%;
+        padding: 20px;
+        position: absolute;
+        left: 0.5%;
+        .span-1 {
+          font-size: 15px;
+        }
+        .span-2 {
+          font-size: 12px;
+        }
+        p {
+          width: 180px;
+          font-size: 10px;
+          line-height: 15px;
+        }
+      }
+    }
+    .parent-button {
+      position: absolute;
+      top: 50%;
+      left: 6%;
+      .buttons {
+        .btn-github {
+          width: 170px;
+          margin-left: 10px;
+        }
+      }
+    }
+    .perant-icons {
+      margin-top: 20px;
+      width: 65%;
+      position: absolute;
+      right: 18%;
+      bottom: 1%;
+      flex-wrap: wrap;
+      ion-icon {
+        font-size: 35px;
+        margin: 0px 25px;
+      }
+      .vue-logo {
+        width: 40px;
+        height: 40px;
+        user-select: none;
+      }
+      .pug-logo {
+        width: 70px;
+        height: 70px;
+        user-select: none;
+      }
+      .git-logo {
+        margin-left: 5px;
+        user-select: none;
+      }
+    }
+  }
+    .languages {
+      height: 700px;
+      margin-bottom: 300px;
+      padding-top: 100px;
+      position: relative;
+      h1 {
+        margin-bottom: 50px;
+        font-size: 30px;
+      }
+      .perant-bar {
+        padding: 50px 0px;
+        position: absolute;
+        left: 13%;
+        top: 25%;
+        .box-arabic h4,
+        .box-english h4,
+        .box-spanish h4 {
+          color: #eee;
+          text-transform: capitalize;
+          font-size: 20px;
+          margin-bottom: 8px;
+        }
+      }
+      .box-arabic .arabic-bar,
+      .box-english .english-bar,
+      .box-spanish .spanish-bar {
+        background-color: #f3f0f0;
+        height: 30px;
+        width: 300px;
+        margin-bottom: 50px;
+    }
+      .logo-languages {
+        width: 200px !important;
+        height: 200px !important;
+        position: absolute;
+        top: 80%;
+        right: 22%;
+      }
+  }
+  .career-objective {
+    h1 {
+        font-size: 25px;
+        letter-spacing: 5px;
+        margin: 20px 0px;
+        user-select: none;
+    }
+    .contant-career {
+        width: 80%;
+        margin-bottom: 50px;
+        position: absolute;
+        top: 25%;
+        left: 12%;
+        margin: auto;
+        p {
+          color: var(--div-color);
+          font-size: 18px;
+          line-height: 25px;
+          text-wrap: balance;
+          font-family: var(--title-font);
+        }
+      }
+      .logo-career {
+          position: absolute;
+          right: 20%;
+          top: 95%;
+          width: 250px !important;
+          height: 250px !important;
+      }
+  }
+  .more-tech-skills {
+    height: 600px;
+    padding-top: 100px;
+    margin-bottom: 600px;
+    background-color: var(--title-name-color);
+    position: relative;
+    h1 {
+        font-size: 25px;
+    }
+    .parent-cards {
+      width: 375px;
+      height: 800px;
+      margin-bottom: 200px;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      position: absolute;
+      right: 5%;
+      top: 40%;
+      .card {
+        --background: linear-gradient(to left, #f7ba2b 0%, #ea5358 100%);
+        width: 190px;
+        height: 254px;
+        padding: 5px;
+        margin-bottom: 30px;
+        border-radius: 1rem;
+        overflow: visible;
+        background: #f7ba2b;
+        background: var(--background);
+        position: relative;
+        z-index: 1;
+      }
+    }
+  }
+  .self-development-skills {
+    margin-top: 300px;
+    padding: 50px 0px;
+    h1 {
+      margin-top: 100px;
+      font-size: 20px;
+      line-height: 35px;
+      text-align: center;
+      letter-spacing: 3px;
+    }
+    .parent-span {
+      background-color: transparent;
+      position: absolute;
+      top: 30%;
+      left: 20%;  
+      span {
+        display: block;
+        width: 250px;
+        font-size: 15px;
+        font-weight: 400;
+        padding: 5px 10px;
+        margin: 20px 0px;
+      }
+    }  
+    .logo-self-skills {
+      width: 250px !important;
+      height: 250px !important;
+      position: absolute;
+      top: 75%;
+      right: 20%;
+    }  
+  }
+  .education {
+    margin-bottom: 100px;
+  h1 {
+      font-size: 30px;
+      letter-spacing: 7px;
+    }
+    article {
+      width: 60%;
+      position: absolute;
+      left: 20%;
+      img {
+        width: 250px;
+        height: 150px;
+        border-radius: 10px;
+        margin-top: 50px;
+      }
+      p {
+        font-size: 15px;
+        font-weight: 400;
+        padding: 20px 0px;
+      }
+    }
+    .logo-education {
+      width: 200px !important;
+      height: 200px !important;
+      position: absolute;
+      top: 65%;
+      right: 25%;
+    }
+  }
+  .contact {
+    height: 700px;
+    position: relative;
+    margin-bottom: 250px;
+    padding: 100px 0px 50px 0px;
+    h1 {
+      font-size: 30px;
+      letter-spacing: 7px;
+    }
+    div {
+      position: absolute;
+      top: 30%;
+      left: 10%;
+      h2 {
+        font-size: 25px;
+        font-weight: 500;
+        margin-bottom: 20px;
+        text-align: start;
+      }
+      .mail {
+        font-size: 25px;
+        text-align: start;
+      }
+    }
+    .logo-contact {
+      width: 200px !important ;
+      height: 200px !important ;
+      position: absolute;
+      top: 48%;
+      right: 1%;
+    }
+    .parent-icons-contact {
+      position: absolute;
+      top: 50%;
+      left: 10%;
+    }  
+  }
+  .section-footer {
+    background-color: var(--footer-color);
+    height: 100px;
+    div {
+      margin: auto;
+      h2 {
+        font-size: 20px;
+        color: white;
+        text-align: center;
+        text-transform: capitalize;
+        font-family: "Lato", sans-serif;
+        font-weight: 600;
+        padding-top: 40px;
+        span a {
+          color: var(--main-color);
+          text-decoration: none;
+          font-family: "Lato", sans-serif;
+        }
+      }
+    }
+  }  
+}
+@media (min-width: 350px) and (max-width: 399px) {
+  header {
+    width: 100%;
+    h1 {
+      font-size: 25px;
+    }
+    .icon-menu {
+      font-size: 40px;
+      position: absolute;
+      top: 20px;
+      right: 5%;
+    }
+    .navigation-parent {
+      display: none;
+      background-color: #eee;
+      margin-right: 24px;
+      padding: 20px 20px 10px 20px;
+      position: absolute;
+      top: 70px;
+      right: 0%;
         nav ul li {
         width: 200px;
         list-style: none;
@@ -1505,21 +1864,24 @@ main {
           margin-left: 10px;
         }
       }
+      button {
+        margin-left: 15px !important;
+      }
     }
     .perant-icons {
       margin-top: 20px;
-      width: 70%;
+      width: 75%;
       position: absolute;
-      right: 15%;
+      right: 14%;
       bottom: 1%;
       flex-wrap: wrap;
       ion-icon {
-        font-size: 35px;
+        font-size: 38px;
         margin: 0px 25px;
       }
       .vue-logo {
-        width: 40px;
-        height: 40px;
+        width: 45px;
+        height: 45px;
         user-select: none;
       }
       .pug-logo {
@@ -1545,7 +1907,7 @@ main {
       .perant-bar {
         padding: 50px 0px;
         position: absolute;
-        left: 35px;
+        left: 30px;
         top: 25%;
         .box-arabic h4,
         .box-english h4,
@@ -1620,6 +1982,7 @@ main {
       flex-wrap: wrap;
       position: absolute;
       right: 0%;
+      top: 40%;
       .card {
         --background: linear-gradient(to left, #f7ba2b 0%, #ea5358 100%);
         width: 190px;
@@ -1649,7 +2012,7 @@ main {
       background-color: transparent;
       position: absolute;
       top: 30%;
-      left: 18%;  
+      left: 16%;  
       span {
         display: block;
         width: 250px;
@@ -1711,12 +2074,16 @@ main {
       top: 30%;
       left: 5%;
       h2 {
-        font-size: 25px;
+        font-size: 22px;
         font-weight: 500;
         margin-bottom: 20px;
+        text-align: start;
+        margin-left: 10px;
       }
       .mail {
-        font-size: 25px;
+        font-size: 22px;
+        text-align: start;
+        margin-left: 10px;
       }
     }
     .logo-contact {
